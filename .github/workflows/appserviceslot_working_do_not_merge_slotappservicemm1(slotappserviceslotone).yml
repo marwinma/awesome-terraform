@@ -9,6 +9,10 @@ on:
       - appServiceSlot_Working_DO_NOT_MERGE
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: ./appServiceSlot
+    
 jobs:
   build:
     runs-on: windows-latest
